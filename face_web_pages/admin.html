@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>admin_panel</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="admin.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <div role="banner" class="nav ">
+
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="images/Facial-Recognition-Identity-Verification.jpg" loading="lazy" sizes="107px" alt="logo"
+          class="image" />
+      </a>
+      <nav role="navigation" class="nav-menu">
+        <a href="index.html" class="nav_link ">Home</a>
+        <a href="index.html" class="nav_link ">Logout</a>
+        <a href="#" class="nav_link ">Demos</a>
+        <a href="#" class="nav_link " style="padding-right: 20px;">About</a>
+      </nav>
+      <div class="nav-button">
+        <div class="icon-nav-menu"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <div class="dashboard">
+      <span class="name"> Dashboard</span>
+    </div>
+      <ul class="sdbar_links">
+        <li>
+          <a href="#" class="add-person-link"><span class="links_name"> Add person</span></a>
+        </li>
+        <li>
+          <a href="#" class="search-person-link"><span class="links_name"> Search person</span></a>
+        </li>
+      </ul>
+    
+  </div>
+  <div class="form-container">
+    <form action="add-person-form">
+      <h2>Add Person</h2>
+      <div>
+        <!-- <label for="name-input">Name:</label>
+        <input type="text" id="name-input" name="name"> -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" >
+      </div>
+
+      <div>  
+        <!-- <label for="image-input">Image:</label>
+        <input type="file" id="image-input" name="image">   -->
+      <label for="picture">Picture:</label>
+      <input type="file" id="picture" name="picture" accept="image/*" required>
+      </div>
+      <button type="submit"><a href="#"></a>Add</button>
+    </form>
+  </div>
+  <script>
+  const addPersonLink = document.querySelector('.add-person-link');
+    const addPersonFormContainer = document.querySelector('.form-container');
+    
+    addPersonLink.addEventListener('click', () => {
+      addPersonFormContainer.classList.add('show');
+    });
+    </script>
+    <div class="form-container-s">
+      <form action="search-person-form">
+        <h2>Search Person_</h2>
+        <div>
+          
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" >
+        </div>
+        
+        <div>  
+        <label for="picture">Picture:123</label>
+        <input type="file" id="picture" name="picture" accept="image/*" required>
+        </div>
+        <button type="submit"><a href="#"></a>Search</button>
+      </form>
+    
+    </div>
+    <script>
+      const searchPersonLink = document.querySelector('.search-person-link');
+        const searchPersonFormContainer = document.querySelector('.form-container-s');
+        
+        searchPersonLink.addEventListener('click', () => {
+          searchPersonFormContainer.classList.add('show');
+        });
+        </script>
+  
+
+</body>
+
+</html>

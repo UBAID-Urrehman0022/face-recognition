@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- {{url_for('static' , filename='file name in static')}} -->
+    <meta charset="utf-8" />
+    <title>face recognition</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="{{url_for('static' , filename='style.css')}}" rel="stylesheet" type="text/css" />
+    <!-- <script src="index.js" type="text/javascript"></script> -->
+    </head>
+
+<body class="body">
+    <div role="banner" class="nav ">
+        
+        <div class="container">
+            <a href="#" class="nav-brand">
+            <img
+                    src="{{url_for('static' , filename='images/Facial-Recognition-Identity-Verification.jpg')}}"
+                    loading="lazy" sizes="107px" 
+                    alt="" class="image" /> 
+            </a>
+            <nav role="navigation" class="nav-menu">
+                <a href="/" class="nav_link ">Home</a>
+                <a href="login" class="nav_link ">Login</a>
+                <!-- <button type="submit"><a href="admin"> Login </a></button> -->
+                <a href="#" class="nav_link ">Demos</a>
+                <a href="#" class="nav_link " style="padding-right: 20px;">About</a>
+            </nav>
+            <div class="nav-button">
+                <div class="icon-nav-menu"></div>
+            </div>
+        </div>
+    </div>
+{% block body %} {% endblock %}
+
+
+
+</body>
+</html>

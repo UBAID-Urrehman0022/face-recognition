@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+{%block body %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>admin_panel</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!-- <link href="{{url_for('static' , filename='style.css')}}" rel="stylesheet" type="text/css" /> -->
+    <link href="{{url_for('static' , filename='admin.css')}}" rel="stylesheet" type="text/css" />
+    
+</head>
+<!-- 
+<body>
+  <div role="banner" class="nav ">
+
+    <div class="container">
+      <a href="#" class="nav-brand">
+        <img
+          src="images/Facial-Recognition-Identity-Verification.jpg"
+          loading="lazy" sizes="107px" 
+          alt="" class="image" /> 
+      </a>
+      <nav role="navigation" class="nav-menu">
+        <a href="index" class="nav_link ">Home</a>
+        <!-- no login option
+        <a href="#" class="nav_link ">Demos</a>
+        <a href="#" class="nav_link " style="padding-right: 20px;">About</a>
+      </nav> -->
+      <div class="nav-button">
+          <div class="icon-nav-menu"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="sidebar">
+    <div class="dashboard">
+      <span class="name"> Dashboard</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#">
+          <span class="links_name">Add person</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="links_name">Search person</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</body>
+{% endblock %}
