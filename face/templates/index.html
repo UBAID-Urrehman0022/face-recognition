@@ -8,7 +8,7 @@
                     <h1 class="heading-2">Upload your image</h1><img src=""
                         loading="lazy" width="166" alt="" />
                         <!-- form -->
-                        {% with messages = get_flashed_messages() %}
+                        <!-- {% with messages = get_flashed_messages() %}
                             {% if messages %}
                                 <ul>
                                     {% for message in messages %}
@@ -16,7 +16,7 @@
                                     {% endfor %}
                                 </ul>
                             {% endif %}
-                        {% endwith %}
+                        {% endwith %} -->
                         <form action="{{ url_for('upload_picture') }}" id="upload-form" method="POST" enctype="multipart/form-data" class="form">
                             <div class="form-group">
                                 <input type="file" name="file" id="file" class="input-file" required>

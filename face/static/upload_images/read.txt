@@ -1,0 +1,5 @@
+here image uploaded from front end is saved
+1 images at a time
+folder cleared when done 
+
+
